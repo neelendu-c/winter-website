@@ -1,17 +1,35 @@
 body{
-    background-color: midnightblue;
+    padding-top:0.5vw;
+    background-color:#CBF1F5;
     flex-direction:column;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
+.card-body{
+    border: 0px;
+}
+
+.nav{
+    margin-left: -5vw;
+    margin-right: -4.5vw;
+}
 
 .nav > li{
-    padding-left:30px;
-    padding-right:30px;
+    background-color:transparent;
+}
+
+.nav-item{
+    margin-left: 0.5vw;
+    border-radius: 6px;
+    border-width: 5px;
+    border-color: white;
 }
 
 .nav-link{
-    background-color: gray;
+    background-color: transparent;
 }
+
 
 
 .foots{
@@ -20,8 +38,14 @@ body{
 
 .aboutme{
     display:flex;
-    
+    background-color:#E3FDFD;;
     align-items:center;
+}
+
+.aboutpic{
+    background-color:#E3FDFD;
+    display:flex;
+    justify-content: center;
 }
 
 .active{
@@ -34,12 +58,94 @@ li > a {
 }
 
 .btn{
-    margin: 1vw;
+    margin: 01vw;
+}
+
+.coll1{
+    margin-left: 01vw;
+    border-radius: 10px;
+    background-color: aqua;
 }
 
 #footer{
     display:flex;
     justify-content:center;
-    color:red;
-    margin-top:auto;
+}
+
+.footer{
+    text-align: center;
+    background-color: #92dee2;
+    margin-left:-5vw;
+    margin-right:-5vw;
+}
+
+.main{
+    width:100%;
+}
+
+.project1{
+    display:flex;
+    justify-content: center;
+    margin-top: 2vw;
+    background-color:#CBF1F5;
+}
+
+
+
+
+
+
+/* buttons */ 
+
+.buttone{
+    display:flex;
+    flex-direction: row;
+}
+
+button {
+    --color: #71C9CE;
+    font-family: inherit;
+    display: inline-block;
+    width: 6em;
+    height: 2.6em;
+    line-height: 2.5em;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 17px;
+    z-index: 1;
+    color: var(--color);
+    border: 2px solid var(--color);
+    border-radius: 6px;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-self: center;
+    align-content: center;
+    justify-content:center;
+}
+
+button::before {
+    position: absolute;
+    content: "";
+    background: var(--color);
+    width: 150px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+button:hover {
+    color: white;
+}
+
+button:before {
+    top: 100%;
+    left: 100%;
+    transition: 0.3s all;
+}
+
+button:hover::before {
+    top: -30px;
+    left: -30px;
 }

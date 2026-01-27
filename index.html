@@ -16,43 +16,51 @@
 
     <!-- Navbar -->
     <ul class="nav nav-tabs nav-stacked" style="display:flex; justify-content: right;">
-        <li class="nav-item">
-            <a href="#" class="nav-link active">Home</a>
-        </li>
-        <li class="nav-item">
-            <a href="profile.html" class="nav-link">Profile</a>
-        </li>
-        <li class="nav-item disabled">
-            <a href="#" class="nav-link">Education</a>
-        </li>
-        <li class="nav-item disabled">
-            <a href="#" class="nav-link">Projects</a>
-        </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link active">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="profile.html" class="nav-link">Profile</a>
+      </li>
+      <li class="nav-item disabled">
+        <a href="#" class="nav-link">Education</a>
+      </li>
+      <li class="nav-item disabled">
+        <a href="#" class="nav-link">Projects</a>
+      </li>
     </ul>
 
-    <div id="main">
+    <div class="main">
       <!-- Main -->
-      <div class="container-fluid">
-        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia exercitationem cupiditate saepe voluptates itaque blanditiis neque at eos corrupti est, officiis nihil consequuntur reiciendis odio non quae fugiat consequatur facilis in sapiente quas iure ipsum. Iure saepe ut voluptatibus quia, deleniti illo optio modi ad ipsam officiis accusantium odio sunt.</h2>
-        
-        <div class="card border-primary">
+      <div>       
+        <div class="card aboutpic w-80">
           <img class="card-img-top" src="holder.js/100px180/" alt="">
           <div class="card-body">
-            <h4 class="card-title">Mainspace (PFP+Basic intro)</h4>
-
-            <div class="container-fluid">
+            <div>
               <div class="row">
                 <div class="col-sm">
-                  <img class="portrait" src="Portrait Test.jpg" alt="" width=500px;">
+                  <img class="portrait" src="Portrait Test.jpg" alt="" width=200px; style="display:flex; justify-self:center;">
                 </div>
 
                 <div class="col-sm aboutme">
-                  <div class="textdes">
-                    <h1>Name</h1>
+                  <div class="textdes" style="text-align: center;">
+                    <h1 style="color: #71C9CE;">Your Name</h1>
                     <p>Aspiring B.Tech Computer Engineering Student</p>
-                    
-                    <button type="button" class="btn btn-primary">Projects</button> 
-                    <button type="button" class="btn btn-primary">Contact</button>
+                   
+                    <div class="buttone">
+                    <button type="button" data-toggle="collapse" href="#contentId">
+                      Contacts
+                    </button>
+                    <button type="button">Projects</button>
+                    <div class="collapse coll1" id="contentId">
+                      LinkedIn 🥑 <br>
+                      GitHub <br>
+                      ChodForces <br>
+                      Email etc ✅
+                    </div>
+                    </div>
+
+                     
 
                   </div>
 
@@ -64,29 +72,76 @@
 
           </div>
         </div>
+      </div>
     </div>
 
+    <!-- Projects -->
 
+    <h1 style="margin-left:2vw; margin-top: 2vw;">Projects</h1>
+
+    <div class="project1">
+      <div class="aboutpic">
+        <div class="card-body">
+          <div>
+            <div class="row">
+              <div class="col-sm" style="display: flex; justify-content: center;">
+                <img class="portrait" src="Portrait Test.jpg" alt="" width=100px;">         
+              </div>
+              <div class="col-sm aboutme">
+                <div class="textdes">
+                  <h1>Nexus</h1>
+                  <p>The ultimate platform for INSERTCOLLEGEHERE students to create stunning professional portfolios that showcase their skills and achievements.</p>
+                  <p>Created in 8 hours for 'INSERTNAMEHERE' hackathon 2025.</p>
+                  <button type="button">Link</button>
+                   
+                </div>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+
+    </div>
+
+    <!-- Blogs -->
+
+    <h1 style="margin-left:2vw; margin-top: 2vw;">Blogs and Essays</h1>
+
+    <div class="project1">
+      <div class="aboutpic">
+        <div class="card-body">
+          <div>
+            <div class="row">
+              <div class="col-sm" style="display: flex; justify-content: center;">
+                <img class="portrait" src="Portrait Test.jpg" alt="" width=100px;">         
+              </div>
+              <div class="col-sm aboutme">
+                <div class="textdes">
+                  <h1>A Beginner's Guide to DSA Problem Types</h1>
+                  <p style="color: purple;">first essay blah</p>
+                  <p style="color: purple">eat slop</p>
+                  <button type="button">Link</button>
+                   
+                </div>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+
+    </div>
+
+    <!-- Footer -->
 
     <div id="footer">
       <div class="container-fluid">
         <div class="row">
-          
-            <div class="card foots">
-              <img class="card-img-top" src="holder.js/100x180/" alt="">
-              <div class="card-body">
-                <h4 class="card-title">Title</h4>
-                <p class="card-text">Text</p>
-              </div>
-            </div>
-
-            <div class="w-100"></div>
-
-            <div class="card foots">
-              <img class="card-img-top" src="holder.js/100x180/" alt="">
-              <div class="card-body">
-                <h4 class="card-title">Title</h4>
-                <p class="card-text">Text</p>
+            <div class="foots">
+              <div class="card-body footer">
+                <h4 class="card-title">Neelendu Chakrabarti</h4>
+                <p class="card-text">btech blahblah</p>
               </div>
             </div>
           
