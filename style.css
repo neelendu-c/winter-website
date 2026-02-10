@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body{
     padding-top:0.5vw;
     background-color:#CBF1F5;
@@ -8,6 +12,9 @@ body{
 
 .card-body{
     border: 0px;
+    border: 2px solid whitesmoke;
+    border-radius: 30px;
+
 }
 
 .nav{
@@ -45,6 +52,7 @@ body{
 .aboutpic{
     background-color:#E3FDFD;
     display:flex;
+    border-radius: 30px;
     justify-content: center;
 }
 
@@ -73,8 +81,9 @@ li > a {
 }
 
 .footer{
+    margin-top:2.5vw;
     text-align: center;
-    background-color: #92dee2;
+    background-color: #E3FDFD;
     margin-left:-5vw;
     margin-right:-5vw;
 }
@@ -90,6 +99,19 @@ li > a {
     background-color:#CBF1F5;
 }
 
+.prof{
+    justify-self: center;
+    border-width: 2px;
+    border-radius: 20px;
+    background-color: #b2eff2;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    width: 80%;
+    margin-bottom: 3vw;
+}
+
 
 
 
@@ -97,9 +119,14 @@ li > a {
 
 /* buttons */ 
 
+a.button{
+    text-decoration: none;
+}
+
 .buttone{
     display:flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 button {
